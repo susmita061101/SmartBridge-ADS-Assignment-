@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Restaurant Recommendations</title>
+</head>
+<body>
+<h1>Restaurant Recommendations</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Restaurant Name</th>
+      <th>Cuisine</th>
+      <th>Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for restaurant in recommendations %}
+      <tr>
+        <td>{{ restaurant["name"] }}</td>
+        <td>{{ restaurant["cuisine"] }}</td>
+        <td>{{ restaurant["rating"] }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</body>
+</html>
